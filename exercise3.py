@@ -49,7 +49,7 @@ def diagnose_car():
                 start_and_die = raw_input()
                 if start_and_die == 'no':
                     print "THERE'S NOTHING ON THE DECISION CHART FOR NO."
-                if start_and_die == 'yes':
+                if start_and_die == 'yes' or 'YES' or 'Yes' or 'y' or 'Y':
                     print "Does your car have fuel injection?"
                     fuel_injection = raw_input()
                     if fuel_injection == 'no':
