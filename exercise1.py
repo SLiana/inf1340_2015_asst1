@@ -20,11 +20,11 @@ __license__ = "MIT License"
 shares_bought = 2000.00
 buy_price = 900.00
 stock_buy_value = shares_bought * buy_price
-stockbroker_buy_commission = 0.03 * (buy_price * shares_bought)
-stock_buy_revenue = (buy_price) * (shares_bought) + (stockbroker_buy_commission)
+buy_commission = 0.03 * (buy_price * shares_bought)
+total_output = (buy_price) * (shares_bought) + (buy_commission)
 print "Lakshmi bought", shares_bought, "stocks for", buy_price,"each, for a total of", stock_buy_value,"."
-print "Lakshmi paid her stockbroker",stockbroker_buy_commission,"for the purchase."
-print "After paying her stockbroker, Lakshmi's total payment was", stock_buy_revenue,"."
+print "Lakshmi paid her stockbroker",buy_commission,"for the purchase."
+print "After paying her stockbroker, Lakshmi's total payment was", total_output,"."
 
 print"\n"
 
@@ -32,13 +32,13 @@ print"\n"
 shares_sold = 2000.00
 sale_price = 942.75
 stock_sale_value = shares_sold * sale_price
-stockbroker_sale_commission = 0.03 * (sale_price * shares_sold)
-stock_sale_revenue = (sale_price) * (shares_sold) - (stockbroker_sale_commission)
+sale_commission = 0.03 * (sale_price * shares_sold)
+total_intake = (sale_price) * (shares_sold) - (sale_commission)
 print "Lakshmi sold" ,shares_sold, "shares for" ,sale_price, "each, for a total of" , stock_sale_value, "."
-print "Lakshmi paid her stockbroker" ,stockbroker_sale_commission, "for the sale."
-print "After paying her stockbroker, Lakshmi's total revenue from the sale was", stock_sale_revenue,"."
+print "Lakshmi paid her stockbroker" ,sale_commission, "for the sale."
+print "After paying her stockbroker, Lakshmi's total revenue from the sale was", total_intake,"."
 
 print"\n"
 
 #final calculation of Lakshmi's
-print "After Lakshmi sold the stocks and paid the broker commission, she had", stock_buy_revenue - stock_sale_revenue, "left."
+print "After Lakshmi sold the stocks and paid the broker commission, she had", total_intake - total_output, "left."
