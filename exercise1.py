@@ -98,5 +98,3 @@ if final_amount < 1:
     print "Lakshmi did not make a profit, since the amount of money after she sold the stock was", final_amount,"."
 if final_amount > -1:
     print "Lakshmi made a profit, since the amount of money after she sold the stock was", final_amount,"."
-
-print"\n"
