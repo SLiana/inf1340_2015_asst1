@@ -14,7 +14,7 @@ input:
 #Inputs: print "Lakshmi bought", shares_bought, "stocks for", buy_price,"each, for a total of", stock_buy_value,"."
 #Expected Outputs: Lakshmi bought 2000.0 stocks for 900.0 each, for a total of1800000.0.
 #Actual Output: Lakshmi bought 2000.0 stocks for 900.0 each, for a total of 1800000.0 .
-#Errors: extra white space, solved with concantenation
+#Errors: extra white space, solved with concantentation 
 
 #Inputs: print "After paying her stockbroker, Lakshmi's total payment was "+str(total_output)+"."
 #print "Lakshmi sold "+str(shares_sold)+" stocks for "+str(sale_price)+" each, for a total of "+str(stock_sale_value)+"."
