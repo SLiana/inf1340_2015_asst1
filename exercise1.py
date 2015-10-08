@@ -20,8 +20,8 @@ input:
 #print "Lakshmi sold "+str(shares_sold)+" stocks for "+str(sale_price)+" each, for a total of "+str(stock_sale_value)+"."
 #Expected Outputs:
 #After paying her stockbroker, Lakshmi's total payment was 1854000.0.
-#
-#
+#unwanted space
+#unwanted space
 #Lakshmi sold 2000.0 stocks for 942.75 each, for a total of 1885500.0.
 #Actual Output: After paying her stockbroker, Lakshmi's total payment was 1854000.0.
 #Lakshmi sold 2000.0 stocks for 942.75 each, for a total of 1885500.0.

@@ -18,14 +18,15 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs:
+    Inputs: As is but not nested - same indentation all the way through
 
-    Expected Outputs:
+    Expected Outputs: To follow the decision logic of the question tree
 
-    Errors:
+    Errors: Did not proceed according to logic. fixed by nesting properly
 
     """
     silent = raw_input("Is the car silent when you turn the key? ")
+    #this begins the line of questions on the left side of the question tree
     if silent == 'Y':
         corroded = raw_input("Are the battery terminals corroded?")
         if corroded == 'Y':
@@ -33,6 +34,7 @@ def diagnose_car():
         elif corroded == 'N':
             print "Replace cables and try again."
     elif silent == 'N':
+        #this begins the line of questions on the right side of the question tree
         clicking = raw_input("Does the car make a clicking noise?")
         if clicking == 'Y':
             print "Replace the battery."
