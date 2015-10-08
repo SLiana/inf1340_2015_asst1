@@ -50,7 +50,7 @@ def name_that_shape():
 name_that_shape()
 
 
-Update October 07, 2015
+
 
 """ Assignment 1, Exercise 2, INF1340, Fall, 2015. Name that shape.
 This module contains one function name_that_shape(). It prompts the user

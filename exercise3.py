@@ -25,31 +25,25 @@ def diagnose_car():
     Errors:
 
     """
-    print "Please enter either 'Y' or 'N' to the following questions so we can identify the possible issue with your car."
     silent = raw_input("Is the car silent when you turn the key? ")
     if silent == 'Y':
-        print "Are the battery terminals corroded?"
-        corroded = raw_input()
+        corroded = raw_input("Are the battery terminals corroded?")
         if corroded == 'Y':
             print "Clean terminals and try starting again."
         elif corroded == 'N':
             print "Replace cables and try again."
     elif silent == 'N':
-        print "Does the car make a clicking noise?"
-        clicking = raw_input()
+        clicking = raw_input("Does the car make a clicking noise?")
         if clicking == 'Y':
             print "Replace the battery."
         elif clicking == 'N':
-            print "Does the car crank up but fails to start?"
-            crank = raw_input()
+            crank = raw_input("Does the car crank up but fails to start?")
             if crank == 'Y':
                 print "Check spark plug connections."
             elif crank == 'N':
-                print "Does the engine start and then die?"
-                start_and_die = raw_input()
+                start_and_die = raw_input("Does the engine start and then die?")
                 if start_and_die == 'Y':
-                    print "Does your car have fuel injection?"
-                    fuel_injection = raw_input()
+                    fuel_injection = raw_input("Does your car have fuel injection?")
                     if fuel_injection == 'N':
                         print "Check to ensure the choke is opening and closing."
                     elif fuel_injection == 'Y':
