@@ -25,42 +25,40 @@ def diagnose_car():
     Errors:
 
     """
-    print "Please answer 'yes' or 'no' to the following questions so we can identify the possible issue with your car."
-    silent = raw_input("Is the car silent when you turn the key?")
-    if silent == 'yes' or 'YES' or 'Yes' or 'y' or 'Y':
+    print "Please enter either 'Y' or 'N' to the following questions so we can identify the possible issue with your car."
+    silent = raw_input("Is the car silent when you turn the key? ")
+    if silent == 'Y':
         print "Are the battery terminals corroded?"
         corroded = raw_input()
-        if corroded == 'yes' or 'YES' or 'Yes' or 'y' or 'Y':
+        if corroded == 'Y':
             print "Clean terminals and try starting again."
-        elif corroded == 'no':
+        elif corroded == 'N':
             print "Replace cables and try again."
-    elif silent == 'no':
+    elif silent == 'N':
         print "Does the car make a clicking noise?"
         clicking = raw_input()
-        if clicking == 'yes' or 'YES' or 'Yes' or 'y' or 'Y':
+        if clicking == 'Y':
             print "Replace the battery."
-        if clicking == 'no':
+        elif clicking == 'N':
             print "Does the car crank up but fails to start?"
             crank = raw_input()
-            if crank == 'yes':
+            if crank == 'Y':
                 print "Check spark plug connections."
-            if crank == 'no':
+            elif crank == 'N':
                 print "Does the engine start and then die?"
                 start_and_die = raw_input()
-                if start_and_die == 'no':
-                    print "THERE'S NOTHING ON THE DECISION CHART FOR NO."
-                if start_and_die == 'yes' or 'YES' or 'Yes' or 'y' or 'Y':
+                if start_and_die == 'Y':
                     print "Does your car have fuel injection?"
                     fuel_injection = raw_input()
-                    if fuel_injection == 'no':
+                    if fuel_injection == 'N':
                         print "Check to ensure the choke is opening and closing."
-                    if fuel_injection == 'yes':
+                    elif fuel_injection == 'Y':
                         print "Get it in for service."
-    else: #Prompt user to only enter yes or no
-            print "Please enter only 'yes' or 'no'."
+                elif start_and_die == 'N':
+                    print "Engine is not getting enough fuel. Clean fuel pump."
 diagnose_car()
 
-#
+
 
 
 

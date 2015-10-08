@@ -44,9 +44,6 @@ def name_that_shape():
         print "Nonagon"
     elif answer == '10':
         print "Decagon"
-    #More fun because sometimes writing code can be dry.
-    elif answer == '42':
-        print "I always thought something was fundamentally wrong with the universe."
     else:
         print "Error"
 
