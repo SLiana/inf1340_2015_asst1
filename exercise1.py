@@ -10,7 +10,7 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-input:
+"""
 #Inputs: print "Lakshmi bought", shares_bought, "stocks for", buy_price,"each, for a total of", stock_buy_value,"."
 #Expected Outputs: Lakshmi bought 2000.0 stocks for 900.0 each, for a total of1800000.0.
 #Actual Output: Lakshmi bought 2000.0 stocks for 900.0 each, for a total of 1800000.0 .
