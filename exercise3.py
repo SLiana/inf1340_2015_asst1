@@ -12,19 +12,17 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+"""
+"""
+# Interactively queries the user with yes/no questions to identify a possible issue with a car.
+
+# Inputs: As is but not nested - same indentation all the way through
+# Expected Outputs: To follow the decision logic of the question tree
+# Errors: Did not proceed according to logic. fixed by nesting properly
+"""
+"""
 
 def diagnose_car():
-    """
-    Interactively queries the user with yes/no questions to identify a
-    possible issue with a car.
-
-    Inputs: As is but not nested - same indentation all the way through
-
-    Expected Outputs: To follow the decision logic of the question tree
-
-    Errors: Did not proceed according to logic. fixed by nesting properly
-
-    """
     silent = raw_input("Is the car silent when you turn the key? ")
     #this begins the line of questions on the left side of the question tree
     if silent == 'Y':
